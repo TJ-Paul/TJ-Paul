@@ -1,4 +1,4 @@
-<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<img width="144" height="76" alt="image" src="https://github.com/user-attachments/assets/f699ddba-c928-4b28-bbd1-ee68e2994e95" /><!-- ═══════════════════════ HEADER ═══════════════════════ -->
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:1a1b27,70:3b2c85,100:7aa2f7&height=230&section=header&text=Turjjo%20Paul&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=CSE%20%40%20BUET%20%&descAlignY=58&descSize=18" alt="header"/>
 </p>
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://tj-paul.github.io"><img src="https://img.shields.io/badge/Portfolio-tj--paul.github.io-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://tj-paul.github.io/TJ-Paul/"><img src="https://img.shields.io/badge/Portfolio-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
   <a href="https://linkedin.com/in/turjjo-paul"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:tjpaul770@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://fb.com/turjjo.paul"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/></a>
