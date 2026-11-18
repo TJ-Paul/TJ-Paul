@@ -1,6 +1,6 @@
 <!-- ═══════════════════════ HEADER ═══════════════════════ -->
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:1a1b27,70:3b2c85,100:7aa2f7&height=230&section=header&text=Turjjo%20Paul&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=CSE%20%40%20BUET%20%&descAlignY=58&descSize=18" alt="header"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:1a1b27,70:3b2c85,100:7aa2f7&height=230&section=header&text=Turjjo%20Paul&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=CSE%20%40%20BUET&descAlignY=58&descSize=18" alt="header"/>
 </p>
 
 <p align="center">
@@ -67,19 +67,20 @@ class TurjjoPaul:
 </p>
 
 <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+<!-- Changed a repo description? Bump v=2 to v=3 on that card to refresh it right away. -->
 <h2>🚀 Featured Projects</h2>
 
 <p align="center">
-  <a href="https://github.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=OrganizeMe-JavaFX-v2-L1T2&theme=tokyonight&hide_border=true&border_radius=12" alt="OrganizeMe"/></a>
-  <a href="https://github.com/TJ-Paul/Tessellate-JavaFX"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Tessellate-JavaFX&theme=tokyonight&hide_border=true&border_radius=12" alt="Tessellate"/></a>
+  <a href="https://github.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=OrganizeMe-JavaFX-v2-L1T2&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="OrganizeMe"/></a>
+  <a href="https://github.com/TJ-Paul/Tessellate-JavaFX"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Tessellate-JavaFX&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Tessellate"/></a>
 </p>
 <p align="center">
-  <a href="https://github.com/TJ-Paul/SnakeGame-iGraphics-L1T1"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=SnakeGame-iGraphics-L1T1&theme=tokyonight&hide_border=true&border_radius=12" alt="Snake Game"/></a>
-  <a href="https://github.com/TJ-Paul/Signal_Lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Signal_Lab&theme=tokyonight&hide_border=true&border_radius=12" alt="Signal Lab"/></a>
+  <a href="https://github.com/TJ-Paul/SnakeGame-iGraphics-L1T1"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=SnakeGame-iGraphics-L1T1&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Snake Game"/></a>
+  <a href="https://github.com/TJ-Paul/Signal_Lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Signal_Lab&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Signal Lab"/></a>
 </p>
 <p align="center">
-  <a href="https://github.com/TJ-Paul/CSE220-Signal-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=CSE220-Signal-Project&theme=tokyonight&hide_border=true&border_radius=12" alt="Signal Project"/></a>
-  <a href="https://github.com/TJ-Paul/Mobius-Transformation-visualization"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Mobius-Transformation-visualization&theme=tokyonight&hide_border=true&border_radius=12" alt="Mobius"/></a>
+  <a href="https://github.com/TJ-Paul/CSE220-Signal-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=CSE220-Signal-Project&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Signal Project"/></a>
+  <a href="https://github.com/TJ-Paul/Mobius-Transformation-visualization"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Mobius-Transformation-visualization&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Mobius"/></a>
 </p>
 
 <details>
@@ -110,5 +111,7 @@ class TurjjoPaul:
   <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=TJ-Paul&theme=tokyo-night&hide_border=true&area=true&radius=12" alt="activity graph"/>
 </p>
 
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7aa2f7,30:3b2c85,60:1a1b27,100:0d1117&height=120&section=footer" alt="footer"/>
 </p>
