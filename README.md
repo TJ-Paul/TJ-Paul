@@ -1,4 +1,4 @@
-<img width="144" height="76" alt="image" src="https://github.com/user-attachments/assets/f699ddba-c928-4b28-bbd1-ee68e2994e95" /><!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:1a1b27,70:3b2c85,100:7aa2f7&height=230&section=header&text=Turjjo%20Paul&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=CSE%20%40%20BUET%20%&descAlignY=58&descSize=18" alt="header"/>
 </p>
