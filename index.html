@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turjjo Paul</title>
+  <meta name="description" content="Turjjo Paul — CSE undergrad at BUET. Games, apps, signal processing and data science." />
+  <meta property="og:title" content="Turjjo Paul — Portfolio" />
+  <meta property="og:description" content="CSE @ BUET. I build games, apps, visualizations and audio DSP tools." />
+  <meta property="og:image" content="https://github.com/TJ-Paul.png" />
+  <meta name="theme-color" content="#070b14" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23070b14'/><path d='M6 32 Q14 10 22 32 T38 32 T54 32' stroke='%2322d3ee' stroke-width='5' fill='none' stroke-linecap='round'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═════════ NAV ═════════ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Home">
+      <svg viewBox="0 0 64 32" width="38" height="19" aria-hidden="true"><path d="M2 16 Q10 -2 18 16 T34 16 T50 16 T62 16" /></svg>
+      <span>TJ<span class="accent">.</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav-cta">Say hi</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- ═════════ HERO ═════════ -->
+    <section class="hero">
+      <canvas id="scope" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow mono"><span class="dot"></span> CSE '23 · BUET · Dhaka</p>
+          <h1 class="hero-name">
+            <span class="line">Turjjo</span>
+            <span class="line outline">Paul<span class="accent">.</span></span>
+          </h1>
+          <p class="hero-role mono">&gt; <span id="typed"></span><span class="caret">_</span></p>
+          <p class="hero-sub">I turn ideas into things you can play, click and listen to: games in C++, desktop apps in JavaFX, an Android audio lab, and math you can drag around.</p>
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary">See my work <span aria-hidden="true">→</span></a>
+            <a href="https://github.com/TJ-Paul" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="ring"></div>
+          <img src="https://github.com/TJ-Paul.png?size=460" alt="Turjjo Paul" width="230" height="230" />
+          <div class="badge mono badge-a">🎮 game dev</div>
+          <div class="badge mono badge-b">🎧 audio DSP</div>
+          <div class="badge mono badge-c">📊 data science</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint mono" aria-label="Scroll down">scroll<span></span></a>
+    </section>
+
+    <!-- ═════════ MARQUEE ═════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track mono">
+        <span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Java</span><i>✦</i><span>JavaFX</span><i>✦</i><span>Kotlin</span><i>✦</i><span>Jetpack Compose</span><i>✦</i><span>Python</span><i>✦</i><span>NumPy</span><i>✦</i><span>Pandas</span><i>✦</i><span>JavaScript</span><i>✦</i><span>FFT / STFT</span><i>✦</i><span>ONNX</span><i>✦</i><span>LaTeX</span><i>✦</i>
+        <span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Java</span><i>✦</i><span>JavaFX</span><i>✦</i><span>Kotlin</span><i>✦</i><span>Jetpack Compose</span><i>✦</i><span>Python</span><i>✦</i><span>NumPy</span><i>✦</i><span>Pandas</span><i>✦</i><span>JavaScript</span><i>✦</i><span>FFT / STFT</span><i>✦</i><span>ONNX</span><i>✦</i><span>LaTeX</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ═════════ ABOUT ═════════ -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="sec-num mono">01</span>
+        <h2>About me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">Hi, I'm <strong>Turjjo</strong> (friends call me <strong>TJ</strong>), a Computer Science &amp; Engineering student at <strong>Bangladesh University of Engineering and Technology</strong>.</p>
+          <p>My first real project was a recreation of the Nokia snake game I grew up with, written in C++ with iGraphics. Since then I've built a JavaFX productivity suite, a dot-connect game from my school days, a Möbius transformation visualizer, and <em>Signal Lab</em>, a full audio signal processing toolkit that runs Demucs and Whisper on an Android phone, offline.</p>
+          <p>Right now I'm going deeper into <strong>Python, NumPy and Pandas</strong> for <strong>data science</strong>, and I'd love to collaborate with people who are into it too.</p>
+        </div>
+        <div class="about-card reveal">
+          <pre class="code mono"><span class="k">class</span> <span class="c">TurjjoPaul</span>:
+    uni      = <span class="s">"BUET"</span>
+    dept     = <span class="s">"CSE"</span>
+    batch    = <span class="n">2023</span>
+    builds   = [<span class="s">"games"</span>, <span class="s">"apps"</span>,
+                <span class="s">"visualizers"</span>, <span class="s">"DSP"</span>]
+    learning = <span class="s">"data science"</span>
+    open_to  = <span class="s">"collaboration 🤝"</span></pre>
+          <div class="stats" id="ghStats">
+            <div><b data-stat="repos">15+</b><span>public repos</span></div>
+            <div><b data-stat="stars">6+</b><span>stars earned</span></div>
+            <div><b data-stat="followers">7+</b><span>followers</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ WORK ═════════ -->
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <span class="sec-num mono">02</span>
+        <h2>Selected work</h2>
+        <p class="sec-sub">Things I've designed, built and shipped.</p>
+      </div>
+
+      <div class="bento">
+        <!-- Signal Lab (flagship) -->
+        <article class="card card-xl reveal" data-tilt>
+          <div class="card-visual signal-visual">
+            <canvas class="mini-spectrum" aria-hidden="true"></canvas>
+            <span class="tag tag-hot mono">★ flagship</span>
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">CSE 220 · Web + Android</p>
+            <h3>Signal Lab</h3>
+            <p>A complete audio DSP toolkit: FFT spectrum, spectrograms, Butterworth filtering, noise reduction, karaoke vocal separation with <b>Demucs</b>, lyric transcription with <b>Whisper</b> in English, Hindi and Bangla, plus a vault that hides audio inside encrypted PNGs. The Android version is native Kotlin and Compose and runs every model on the phone, offline.</p>
+            <ul class="chips mono"><li>Kotlin</li><li>Jetpack Compose</li><li>Python</li><li>ONNX Runtime</li><li>DSP</li></ul>
+            <div class="links">
+              <a href="https://github.com/TJ-Paul/Signal_Lab" target="_blank" rel="noopener">Android app ↗</a>
+              <a href="https://github.com/TJ-Paul/CSE220-Signal-Project" target="_blank" rel="noopener">Web toolkit ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Möbius -->
+        <article class="card card-tall reveal" data-tilt>
+          <div class="card-visual img">
+            <img src="https://raw.githubusercontent.com/TJ-Paul/Mobius-Transformation-visualization/HEAD/visuals.png" alt="Möbius transformation visualizer screenshot" loading="lazy" />
+            <span class="tag mono">● live</span>
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">Math · Interactive</p>
+            <h3>Möbius Visualizer</h3>
+            <p>Drag points and watch <code>w = (az+b)/(cz+d)</code> map the z-plane onto the w-plane live.</p>
+            <ul class="chips mono"><li>JavaScript</li><li>Canvas</li><li>Complex analysis</li></ul>
+            <div class="links">
+              <a href="https://tj-paul.github.io/Mobius-Transformation-visualization/" target="_blank" rel="noopener">Live demo ↗</a>
+              <a href="https://github.com/TJ-Paul/Mobius-Transformation-visualization" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- OrganizeMe -->
+        <article class="card reveal" data-tilt>
+          <div class="card-visual img">
+            <img src="https://raw.githubusercontent.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2/HEAD/menu_page.png" alt="OrganizeMe menu screenshot" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">L1T2 · Desktop</p>
+            <h3>OrganizeMe</h3>
+            <p>A JavaFX productivity suite with prioritized tasks, a scheduler, a Pomodoro timer, team collaboration and multi-device sync.</p>
+            <ul class="chips mono"><li>Java</li><li>JavaFX</li><li>Pomodoro</li></ul>
+            <div class="links"><a href="https://github.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
+        <!-- Tessellate -->
+        <article class="card reveal" data-tilt>
+          <div class="card-visual img">
+            <img src="https://raw.githubusercontent.com/TJ-Paul/Tessellate-JavaFX/HEAD/code/src/Tesselate_gameplay.png" alt="Tessellate gameplay screenshot" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">Game · JavaFX</p>
+            <h3>Tessellate</h3>
+            <p>The dot-connect game every 2000s kid played in school. Connect dots without crossing lines and claim triangles.</p>
+            <ul class="chips mono"><li>Java</li><li>JavaFX</li><li>Geometry</li></ul>
+            <div class="links"><a href="https://github.com/TJ-Paul/Tessellate-JavaFX" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
+        <!-- Snake -->
+        <article class="card reveal" data-tilt>
+          <div class="card-visual img">
+            <img src="https://raw.githubusercontent.com/TJ-Paul/SnakeGame-iGraphics-L1T1/HEAD/social%20media%20uploads/gameplay.png" alt="Snake game screenshot" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">CSE 102 · My first game</p>
+            <h3>Snake: iGraphics</h3>
+            <p>A tribute to the Nokia classic, with a menu, settings and gameplay, all written in C++ with the iGraphics library.</p>
+            <ul class="chips mono"><li>C++</li><li>iGraphics</li><li>OpenGL</li></ul>
+            <div class="links"><a href="https://github.com/TJ-Paul/SnakeGame-iGraphics-L1T1" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
+        <!-- Wedding -->
+        <article class="card card-wide reveal" data-tilt>
+          <div class="card-visual wedding-visual" aria-hidden="true">
+            <span class="w-layer l1"></span><span class="w-layer l2"></span><span class="w-layer l3"></span>
+            <span class="w-text">Join us</span>
+            <span class="tag mono">● live</span>
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">Web · Animation</p>
+            <h3>Wedding Invitation</h3>
+            <p>A cinematic invitation that tells its story as you scroll. Hands move together, details fade in, and the date appears. Built with no animation libraries.</p>
+            <ul class="chips mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="links">
+              <a href="https://tj-paul.github.io/wedding-invitation-parallax/" target="_blank" rel="noopener">Live demo ↗</a>
+              <a href="https://github.com/TJ-Paul/wedding-invitation-parallax" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Small projects -->
+      <div class="mini-list reveal">
+        <h3 class="mini-title mono">// more experiments</h3>
+        <a class="mini" href="https://tj-paul.github.io/CSE213-SWE-TF/" target="_blank" rel="noopener"><span>📘</span><b>CSE 213 Notes</b><em>Software engineering study notes site</em><i>↗</i></a>
+        <a class="mini" href="https://tj-paul.github.io/flip-clock/" target="_blank" rel="noopener"><span>⏰</span><b>Flip Clock</b><em>My first GitHub Pages site</em><i>↗</i></a>
+        <a class="mini" href="https://github.com/TJ-Paul/calculator-notion-widget" target="_blank" rel="noopener"><span>🧮</span><b>Notion Calculator</b><em>Embeddable calculator widget</em><i>↗</i></a>
+        <a class="mini" href="https://github.com/TJ-Paul/python-notes" target="_blank" rel="noopener"><span>🐍</span><b>Python Notes</b><em>Data science learning notebooks</em><i>↗</i></a>
+        <a class="mini" href="https://github.com/TJ-Paul/Parallax-Effect" target="_blank" rel="noopener"><span>🌄</span><b>Parallax Effect</b><em>Scroll-depth experiments</em><i>↗</i></a>
+      </div>
+    </section>
+
+    <!-- ═════════ SKILLS ═════════ -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="sec-num mono">03</span>
+        <h2>Toolbox</h2>
+        <p class="sec-sub">What I reach for when I build.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="mono">Languages</h3>
+          <div class="skill-icons">
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" /><figcaption>C</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" /><figcaption>C++</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" /><figcaption>Java</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" /><figcaption>Kotlin</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" /><figcaption>Python</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" /><figcaption>JavaScript</figcaption></figure>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="mono">Frameworks &amp; Data</h3>
+          <div class="skill-icons">
+            <figure><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="" /><figcaption>JavaFX</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" alt="" /><figcaption>Compose</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="" /><figcaption>NumPy</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="" /><figcaption>Pandas</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="" /><figcaption>Matplotlib</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="" /><figcaption>Jupyter</figcaption></figure>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="mono">Tools</h3>
+          <div class="skill-icons">
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" /><figcaption>Git</figcaption></figure>
+            <figure><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" /><figcaption>GitHub</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="" /><figcaption>Android Studio</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="" /><figcaption>IntelliJ</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" /><figcaption>VS Code</figcaption></figure>
+            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="" class="invert" /><figcaption>LaTeX</figcaption></figure>
+          </div>
+        </div>
+        <div class="skill-group concepts reveal">
+          <h3 class="mono">Concepts I enjoy</h3>
+          <ul class="chips mono big">
+            <li>OOP &amp; design patterns</li><li>Data structures</li><li>Signal processing</li><li>FFT / STFT</li><li>Complex analysis</li><li>On-device ML</li><li>Game loops</li><li>Scroll animation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════ JOURNEY ═════════ -->
+    <section class="section" id="journey">
+      <div class="section-head reveal">
+        <span class="sec-num mono">04</span>
+        <h2>Journey</h2>
+        <p class="sec-sub">Level by level, term by term.</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="t-when mono">Level 1 · Term 1</span>
+          <h3>Hello, C &amp; C++ 🐍</h3>
+          <p>Learned to program in C and built my first game, Snake, with iGraphics for CSE 102.</p>
+        </li>
+        <li class="reveal">
+          <span class="t-when mono">Level 1 · Term 2</span>
+          <h3>Objects everywhere ☕</h3>
+          <p>Java and OOP. Shipped OrganizeMe (tasks, Pomodoro, team sync) and Tessellate, both in JavaFX.</p>
+        </li>
+        <li class="reveal">
+          <span class="t-when mono">Level 2</span>
+          <h3>Math meets code 📐</h3>
+          <p>Built an interactive Möbius transformation visualizer and published my software engineering notes as a website.</p>
+        </li>
+        <li class="reveal">
+          <span class="t-when mono">CSE 220</span>
+          <h3>Signals &amp; sound 🎧</h3>
+          <p>Signal Lab: a DSP pipeline from sampling to reconstruction, then ported to Android with Demucs and Whisper running on the phone.</p>
+        </li>
+        <li class="reveal now">
+          <span class="t-when mono">Now</span>
+          <h3>Into the data 📊</h3>
+          <p>Going deep on Python, NumPy and Pandas for data science. Always open to collaborating.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ═════════ ACTIVITY ═════════ -->
+    <section class="section" id="activity">
+      <div class="section-head reveal">
+        <span class="sec-num mono">05</span>
+        <h2>On GitHub</h2>
+      </div>
+      <div class="activity reveal">
+        <img src="https://ghchart.rshah.org/22d3ee/TJ-Paul" alt="TJ-Paul's GitHub contribution chart" />
+        <a href="https://github.com/TJ-Paul" target="_blank" rel="noopener" class="btn btn-ghost">Follow @TJ-Paul</a>
+      </div>
+    </section>
+
+    <!-- ═════════ CONTACT ═════════ -->
+    <section class="section contact" id="contact">
+      <div class="reveal">
+        <p class="eyebrow mono"><span class="dot"></span> open to collaborate</p>
+        <h2 class="contact-title">Let's build<br/>something <span class="grad">loud</span>.</h2>
+        <p class="sec-sub">Working on a data science idea, a game, or something weird and interesting? My inbox is open.</p>
+        <a class="mail mono" href="mailto:tjpaul770@gmail.com">tjpaul770@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="socials">
+          <a href="https://github.com/TJ-Paul" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+          <a href="https://linkedin.com/in/turjjo-paul" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm1.8 13.1H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg></a>
+          <a href="https://fb.com/turjjo.paul" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12Z"/></svg></a>
+          <a href="https://instagram.com/turjjo_paul" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2ZM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9Z"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Turjjo Paul</span>
+    <span>built from scratch · hosted on GitHub Pages</span>
+    <a href="#top">back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
