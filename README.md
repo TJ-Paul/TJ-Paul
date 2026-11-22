@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&multiline=false&width=680&height=50&lines=Hi+there+%F0%9F%91%8B+I'm+Turjjo+Paul;CSE+%40+BUET+%C2%B7+Level+2%2C+Term+2;Running+a+live+app+for+367+hall+residents;Kotlin+%E2%80%A2+TypeScript+%E2%80%A2+PostgreSQL+%E2%80%A2+Java+%E2%80%A2+C;Bangla+science+videos+on+YouTube+%F0%9F%8E%AC" alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&multiline=false&width=680&height=50&lines=Hi+there+%F0%9F%91%8B+I'm+Turjjo+Paul;CSE+%40+BUET+%C2%B7+Level+2%2C+Term+2;Running+a+live+app+for+367+hall+residents;Kotlin+%E2%80%A2+TypeScript+%E2%80%A2+PostgreSQL+%E2%80%A2+Java+%E2%80%A2+C" alt="Typing SVG"/>
   </a>
 </p>
 
@@ -39,7 +39,6 @@ class TurjjoPaul:
         self.shipped    = {"Aula Dining": "367 active users", "Split the Bill": "Android"}
         self.languages  = ["C", "C++", "Java", "Kotlin", "Python", "TypeScript", "SQL", "MIPS"]
         self.clubs      = ["IEEE Computer Society BUET", "BUET Cyber Security Club"]
-        self.creates    = "Bangla science videos for HSC students 🎬"
 
     def motto(self):
         return "Build it so it holds up in real use."
@@ -55,7 +54,7 @@ A dining management PWA for the residents of **Ahsanullah Hall North, BUET**. It
 - **Rules in the database:** Postgres constraints, triggers and SQL functions across 59 versioned migrations. Clients never write tables directly.
 - **Safe under load:** ordered row locks and idempotency keys. Booking never oversells, and retries or double taps are harmless.
 - **Role-based access** for students, mess managers and super admins.
-- **Tested:** 18 database integration test files on PGlite (Postgres in WASM), plus a load test on the live deployment.
+- **Tested:** 18 database integration test files on PGlite (Postgres in WASM), plus a load test on the live deployment: [▶ watch the load test](https://youtu.be/mUQwqQ7NuBc) · [bloopers](https://youtu.be/GrcmT7QEw7k)
 
 `Next.js` `TypeScript` `Supabase` `PostgreSQL` `pg_cron` `Web Push` `Vitest`
 
@@ -146,11 +145,10 @@ CSE 101 Structured Programming Language (C) · CSE 102 SPL Sessional *(Snake Gam
 <sub>Notes I published: [CSE 213 Software Engineering](https://tj-paul.github.io/CSE213-SWE-TF/) · [MATH 243 Probability & Statistics](https://tj-paul.github.io/MATH243-TF/)</sub>
 
 <!-- ═══════════════════════ BEYOND ═══════════════════════ -->
-<h2>🎬 Beyond Code</h2>
+<h2>🧩 Beyond Code</h2>
 
 - 📸 **IEEE Computer Society BUET Student Branch Chapter:** active member doing photography, video editing and graphic design for flagship events.
 - 🛡️ **BUET Cyber Security Club:** active member solving CTF problems and exploring security.
-- ▶️ **[YouTube @turjjopaul1190](https://www.youtube.com/@turjjopaul1190):** Bangla science explainers for HSC students, plus videography colour-graded in DaVinci Resolve.
 
 <!-- ═══════════════════════ STATS ═══════════════════════ -->
 <h2>📊 GitHub Analytics</h2>

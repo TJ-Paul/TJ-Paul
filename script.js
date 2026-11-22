@@ -121,7 +121,7 @@
     "splitting bills with Kotlin & Compose",
     "processing audio for CSE 220",
     "designing schemas in PostgreSQL",
-    "making Bangla science videos",
+    "solving CTFs with BUET CSC",
   ];
   const typed = document.getElementById("typed");
   if (!animate) {
