@@ -5,12 +5,13 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&multiline=false&width=650&height=50&lines=Hi+there+%F0%9F%91%8B+I'm+Turjjo+Paul;CSE+'23+%40+BUET+%F0%9F%8E%93;I+build+games%2C+apps+%26+visualizations;C+%E2%80%A2+C%2B%2B+%E2%80%A2+Java+%E2%80%A2+Kotlin+%E2%80%A2+Python;Diving+deep+into+Data+Science+%F0%9F%93%8A" alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&multiline=false&width=680&height=50&lines=Hi+there+%F0%9F%91%8B+I'm+Turjjo+Paul;CSE+%40+BUET+%C2%B7+Level+2%2C+Term+2;Running+a+live+app+for+367+hall+residents;Kotlin+%E2%80%A2+TypeScript+%E2%80%A2+PostgreSQL+%E2%80%A2+Java+%E2%80%A2+C;Bangla+science+videos+on+YouTube+%F0%9F%8E%AC" alt="Typing SVG"/>
   </a>
 </p>
 
 <p align="center">
   <a href="https://tj-paul.github.io/TJ-Paul/"><img src="https://img.shields.io/badge/Portfolio-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://www.youtube.com/@turjjopaul1190"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
   <a href="https://linkedin.com/in/turjjo-paul"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:tjpaul770@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://fb.com/turjjo.paul"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/></a>
@@ -31,77 +32,131 @@
 class TurjjoPaul:
     def __init__(self):
         self.university = "Bangladesh University of Engineering and Technology (BUET)"
-        self.department = "Computer Science & Engineering"
-        self.batch      = "CSE '23"
+        self.degree     = "B.Sc. in Computer Science & Engineering"
+        self.term       = "Level 2, Term 2"
         self.pronouns   = "he/him"
 
-        self.languages  = ["C", "C++", "Java", "Kotlin", "Python", "JavaScript"]
-        self.built_with = ["iGraphics", "JavaFX", "Android", "HTML/CSS/JS"]
-        self.learning   = ["NumPy", "Pandas", "Data Science", "Signal Processing"]
-
-        self.looking_for = "collaborators on Data Science projects 🤝"
-        self.contact     = "tjpaul770@gmail.com"
+        self.shipped    = {"Aula Dining": "367 active users", "Split the Bill": "Android"}
+        self.languages  = ["C", "C++", "Java", "Kotlin", "Python", "TypeScript", "SQL", "MIPS"]
+        self.clubs      = ["IEEE Computer Society BUET", "BUET Cyber Security Club"]
+        self.creates    = "Bangla science videos for HSC students 🎬"
 
     def motto(self):
-        return "Learning one commit at a time 🚀"
+        return "Build it so it holds up in real use."
 ```
+
+<!-- ═══════════════════════ FEATURED ═══════════════════════ -->
+<h2>🚀 Featured · Real-World Projects</h2>
+
+### 🍽️ Aula Dining &nbsp; <a href="https://aula-dining.vercel.app"><img src="https://img.shields.io/badge/Live_App-aula--dining.vercel.app-10b981?style=flat-square&logo=vercel&logoColor=white" alt="Live app"/></a> <img src="https://img.shields.io/badge/active_users-367-22d3ee?style=flat-square" alt="367 active users"/>
+
+A dining management PWA for the residents of **Ahsanullah Hall North, BUET**. It runs meal scheduling, seat booking in batches, coupon-based attendance and a live workflow for mess staff.
+
+- **Rules in the database:** Postgres constraints, triggers and SQL functions across 59 versioned migrations. Clients never write tables directly.
+- **Safe under load:** ordered row locks and idempotency keys. Booking never oversells, and retries or double taps are harmless.
+- **Role-based access** for students, mess managers and super admins.
+- **Tested:** 18 database integration test files on PGlite (Postgres in WASM), plus a load test on the live deployment.
+
+`Next.js` `TypeScript` `Supabase` `PostgreSQL` `pg_cron` `Web Push` `Vitest`
+
+### 🧾 Split the Bill &nbsp; <img src="https://img.shields.io/badge/personal_product-Android-a78bfa?style=flat-square&logo=android&logoColor=white" alt="Personal product"/>
+
+An Android app for group outings, where restaurant items carry a percentage VAT or service charge but rickshaws, bikes and tickets are flat costs. It tracks each person's itemised orders, spreads the VAT and service charge across food items in proportion, keeps flat costs separate, and handles outings with several stops.
+
+`Kotlin` `Jetpack Compose`
+
+<!-- ═══════════════════════ ACADEMIC ═══════════════════════ -->
+<h2>🎓 Academic & Engineering Projects</h2>
+
+| Project | Course | What it is | Tech |
+|:--|:--|:--|:--|
+| 🎧 **Audio Craft** · [web](https://github.com/TJ-Paul/CSE220-Signal-Project) · [android](https://github.com/TJ-Paul/Signal_Lab) | CSE 220 | Audio signal processing and visualisation toolkit: FFT, spectrograms, filtering, Demucs and Whisper | `Python` `Kotlin` `ONNX` |
+| 🎬 **IMDb Clone** | CSE 216 | Full-stack movie database with a normalised schema and complex queries | `PostgreSQL` `Express` `React` `Node` |
+| 📈 **LoadLab** | CSE 214 | Load-testing and performance benchmarking workflow | `Apache JMeter` |
+| ✅ **[OrganizeMe](https://github.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2)** | CSE 108 | Multi-threaded client-server task app with real-time messaging and Pomodoro | `Java` `JavaFX` `Sockets` |
+| 🐍 **[Snake Game](https://github.com/TJ-Paul/SnakeGame-iGraphics-L1T1)** | CSE 102 | Classic arcade game written from scratch | `C` `iGraphics` |
+| 🔺 **[Tessellate](https://github.com/TJ-Paul/Tessellate-JavaFX)** | side project | The dot-and-triangle school game, built with CSE 108 skills | `Java` `JavaFX` |
+| 📦 **SpaceManager** | side project | 2D shape-packing desktop utility, shipped as an executable JAR | `Java` `JavaFX` |
+
+<sub>Side experiments, just for fun: [Möbius visualizer](https://tj-paul.github.io/Mobius-Transformation-visualization/) · [wedding invitation](https://tj-paul.github.io/wedding-invitation-parallax/) · [parallax](https://github.com/TJ-Paul/Parallax-Effect) · [flip clock](https://github.com/TJ-Paul/flip-clock) · [calculator](https://tj-paul.github.io/calculator/) · [python notes](https://github.com/TJ-Paul/python-notes)</sub>
 
 <!-- ═══════════════════════ TECH STACK ═══════════════════════ -->
 <h2>🛠️ Tech Stack</h2>
 
 <p align="center"><b>Languages</b></p>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,kotlin,py,js,html,css,latex&theme=dark" alt="languages"/>
+  <img src="https://skillicons.dev/icons?i=c,cpp,java,kotlin,py,js,ts&theme=dark" alt="languages"/><br/>
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"/>
+  <img src="https://img.shields.io/badge/MIPS_Assembly-555555?style=flat-square" alt="MIPS"/>
 </p>
 
-<p align="center"><b>Frameworks · Data · Tools</b></p>
+<p align="center"><b>Frontend · Mobile · Backend · Databases</b></p>
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="JavaFX" width="48" height="48" title="JavaFX"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" width="48" height="48" title="NumPy"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" width="48" height="48" title="Pandas"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" width="48" height="48" title="Jupyter"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" width="48" height="48" title="Matplotlib"/>
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=androidstudio,idea,vscode,git,github,notion,obsidian&theme=dark" alt="tools"/>
+  <img src="https://skillicons.dev/icons?i=nextjs,react,html,css,androidstudio,nodejs,express,postgres,mysql&theme=dark" alt="frameworks"/><br/>
+  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" alt="Compose"/>
+  <img src="https://img.shields.io/badge/JavaFX-007396?style=flat-square&logo=openjdk&logoColor=white" alt="JavaFX"/>
+  <img src="https://img.shields.io/badge/Neon_DB-00E599?style=flat-square" alt="Neon"/>
+  <img src="https://img.shields.io/badge/Oracle_SQL-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle"/>
 </p>
 
-<!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
-<!-- Changed a repo description? Bump v=2 to v=3 on that card to refresh it right away. -->
-<h2>🚀 Featured Projects</h2>
+<p align="center"><b>Data</b></p>
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" width="40" height="40" title="NumPy"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" width="40" height="40" title="Pandas"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" width="40" height="40" title="Matplotlib"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" width="40" height="40" title="Jupyter"/>
+</p>
 
+<p align="center"><b>Tools · Testing · Design</b></p>
 <p align="center">
-  <a href="https://github.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=OrganizeMe-JavaFX-v2-L1T2&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="OrganizeMe"/></a>
-  <a href="https://github.com/TJ-Paul/Tessellate-JavaFX"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Tessellate-JavaFX&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Tessellate"/></a>
+  <img src="https://skillicons.dev/icons?i=git,github,vercel,latex,idea,vscode,notion,obsidian&theme=dark" alt="tools"/><br/>
+  <img src="https://img.shields.io/badge/Apache_JMeter-D22128?style=flat-square&logo=apachejmeter&logoColor=white" alt="JMeter"/>
+  <img src="https://img.shields.io/badge/Logisim_Evolution-555555?style=flat-square" alt="Logisim"/>
+  <img src="https://img.shields.io/badge/DaVinci_Resolve-233A51?style=flat-square&logo=davinciresolve&logoColor=white" alt="DaVinci Resolve"/>
+  <img src="https://img.shields.io/badge/Lightroom-31A8FF?style=flat-square&logo=adobelightroom&logoColor=white" alt="Lightroom"/>
 </p>
-<p align="center">
-  <a href="https://github.com/TJ-Paul/SnakeGame-iGraphics-L1T1"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=SnakeGame-iGraphics-L1T1&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Snake Game"/></a>
-  <a href="https://github.com/TJ-Paul/Signal_Lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Signal_Lab&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Signal Lab"/></a>
-</p>
-<p align="center">
-  <a href="https://github.com/TJ-Paul/CSE220-Signal-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=CSE220-Signal-Project&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Signal Project"/></a>
-  <a href="https://github.com/TJ-Paul/Mobius-Transformation-visualization"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TJ-Paul&repo=Mobius-Transformation-visualization&theme=tokyonight&hide_border=true&border_radius=12&v=2" alt="Mobius"/></a>
-</p>
+
+<!-- ═══════════════════════ COURSEWORK ═══════════════════════ -->
+<h2>📚 Coursework · BUET CSE</h2>
+
+<details open>
+<summary><b>Level 2, Term 2</b> · current, term final</summary>
+
+CSE 209 Computer Architecture · CSE 210 Computer Architecture Sessional · CSE 211 Theory of Computation · CSE 213 Software Engineering · CSE 214 Software Engineering Sessional *(LoadLab)* · CSE 219 Signals and Systems · CSE 220 Signals and Systems Sessional *(Audio Craft)*
+</details>
 
 <details>
-  <summary><b>✨ More things I've made</b></summary>
-  <br/>
+<summary><b>Level 2, Term 1</b></summary>
 
-| Project | What it is | Tech |
-|:--|:--|:--|
-| 💌 [wedding-invitation-parallax](https://github.com/TJ-Paul/wedding-invitation-parallax) | Animated parallax wedding invitation site | `JavaScript` |
-| 🌄 [Parallax-Effect](https://github.com/TJ-Paul/Parallax-Effect) | Scroll-based parallax web experiment | `HTML` `CSS` |
-| ⏰ [flip-clock](https://github.com/TJ-Paul/flip-clock) | Flip clock hosted on GitHub Pages | `HTML` `CSS` `JS` |
-| 🧮 [calculator-notion-widget](https://github.com/TJ-Paul/calculator-notion-widget) | Calculator widget to embed in Notion | `HTML` `JS` |
-| 🐍 [python-notes](https://github.com/TJ-Paul/python-notes) | My Python & data science learning notebooks | `Jupyter` |
-
+CSE 205 Digital Logic Design · CSE 206 DLD Sessional · CSE 207 Data Structures and Algorithms II · CSE 208 DSA II Sessional · CSE 215 Database · CSE 216 Database Sessional *(PERN IMDb Clone)*
 </details>
+
+<details>
+<summary><b>Level 1, Term 2</b></summary>
+
+CSE 105 Data Structures and Algorithms I · CSE 106 DSA I Sessional · CSE 107 Object Oriented Programming Language · CSE 108 OOP Sessional *(OrganizeMe)* · MATH 143 Linear Algebra
+</details>
+
+<details>
+<summary><b>Level 1, Term 1</b></summary>
+
+CSE 101 Structured Programming Language (C) · CSE 102 SPL Sessional *(Snake Game)* · CSE 103 Discrete Mathematics · MATH 141 Calculus I
+</details>
+
+<sub>Notes I published: [CSE 213 Software Engineering](https://tj-paul.github.io/CSE213-SWE-TF/) · [MATH 243 Probability & Statistics](https://tj-paul.github.io/MATH243-TF/)</sub>
+
+<!-- ═══════════════════════ BEYOND ═══════════════════════ -->
+<h2>🎬 Beyond Code</h2>
+
+- 📸 **IEEE Computer Society BUET Student Branch Chapter:** active member doing photography, video editing and graphic design for flagship events.
+- 🛡️ **BUET Cyber Security Club:** active member solving CTF problems and exploring security.
+- ▶️ **[YouTube @turjjopaul1190](https://www.youtube.com/@turjjopaul1190):** Bangla science explainers for HSC students, plus videography colour-graded in DaVinci Resolve.
 
 <!-- ═══════════════════════ STATS ═══════════════════════ -->
 <h2>📊 GitHub Analytics</h2>
 
 <p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=TJ-Paul&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&count_private=true&include_all_commits=true&rank_icon=github" alt="stats"/>
+  <img height="175" src="https://github-readme-stats.vercel.app/api?username=TJ-Paul&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&rank_icon=github" alt="stats"/>
   <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TJ-Paul&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&langs_count=8&hide=tex" alt="top languages"/>
 </p>
 <p align="center">

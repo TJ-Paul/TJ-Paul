@@ -1,13 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark" class="no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Turjjo Paul</title>
-  <meta name="description" content="Turjjo Paul — CSE undergrad at BUET. Games, apps, signal processing and data science." />
-  <meta property="og:title" content="Turjjo Paul — Portfolio" />
-  <meta property="og:description" content="CSE @ BUET. I build games, apps, visualizations and audio DSP tools." />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.remove("no-js");
+      try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") d.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+  <meta name="description" content="Turjjo Paul, CSE undergrad at BUET. Builds Aula Dining (live, 367 users), Split the Bill, Audio Craft and more." />
+  <link rel="canonical" href="https://tj-paul.github.io/TJ-Paul/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tj-paul.github.io/TJ-Paul/" />
+  <meta property="og:title" content="Turjjo Paul | Portfolio" />
+  <meta property="og:description" content="CSE @ BUET. Building Aula Dining, a live dining system for 367 hall residents, plus Android, DSP and database projects." />
   <meta property="og:image" content="https://github.com/TJ-Paul.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Turjjo Paul | Portfolio" />
+  <meta name="twitter:description" content="CSE @ BUET. Live apps, Android, DSP and databases." />
+  <meta name="twitter:image" content="https://github.com/TJ-Paul.png" />
   <meta name="theme-color" content="#070b14" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23070b14'/><path d='M6 32 Q14 10 22 32 T38 32 T54 32' stroke='%2322d3ee' stroke-width='5' fill='none' stroke-linecap='round'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,17 +35,22 @@
 
   <!-- ═════════ NAV ═════════ -->
   <header class="nav" id="nav">
-    <a href="#top" class="logo" aria-label="Home">
-      <span>TJ<span class="accent">.</span></span>
-    </a>
-    <nav class="nav-links" id="navLinks">
+    <a href="#top" class="logo" aria-label="Home">TJ<span class="accent">.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Sections">
       <a href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#coursework">Coursework</a>
       <a href="#skills">Skills</a>
-      <a href="#journey">Journey</a>
+      <a href="#beyond">Beyond</a>
       <a href="#contact" class="nav-cta">Say hi</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
   </header>
 
   <main id="top">
@@ -40,24 +59,24 @@
       <canvas id="scope" aria-hidden="true"></canvas>
       <div class="hero-inner">
         <div class="hero-text">
-          <p class="eyebrow mono"><span class="dot"></span> CSE '23 · BUET · Dhaka</p>
+          <p class="eyebrow mono"><span class="dot"></span> CSE · BUET · Level 2, Term 2</p>
           <h1 class="hero-name">
             <span class="line">Turjjo</span>
             <span class="line outline">Paul<span class="accent">.</span></span>
           </h1>
-          <p class="hero-role mono">&gt; <span id="typed"></span><span class="caret">_</span></p>
-          <p class="hero-sub">I turn ideas into things you can play, click and listen to: games in C++, desktop apps in JavaFX, an Android audio lab, and math you can drag around.</p>
+          <p class="hero-role mono" aria-hidden="true">&gt; <span id="typed"></span><span class="caret">_</span></p>
+          <p class="hero-sub">I build software people use every day. <b>Aula Dining</b> runs meals for <b>367 residents</b> of my hall at BUET. Around it: an Android bill splitter, an audio DSP toolkit, a PERN movie database, and games written from scratch.</p>
           <div class="hero-cta">
-            <a href="#work" class="btn btn-primary">See my work <span aria-hidden="true">→</span></a>
+            <a href="#projects" class="btn btn-primary">See my work <span aria-hidden="true">→</span></a>
             <a href="https://github.com/TJ-Paul" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
         <div class="hero-photo">
           <div class="ring"></div>
           <img src="https://github.com/TJ-Paul.png?size=460" alt="Turjjo Paul" width="230" height="230" />
-          <div class="badge mono badge-a">🎮 game dev</div>
+          <div class="badge mono badge-a">🍽️ 367 live users</div>
           <div class="badge mono badge-b">🎧 audio DSP</div>
-          <div class="badge mono badge-c">📊 data science</div>
+          <div class="badge mono badge-c">🎬 Bangla science on YouTube</div>
         </div>
       </div>
       <a href="#about" class="scroll-hint mono" aria-label="Scroll down">scroll<span></span></a>
@@ -66,8 +85,8 @@
     <!-- ═════════ MARQUEE ═════════ -->
     <div class="marquee" aria-hidden="true">
       <div class="track mono">
-        <span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Java</span><i>✦</i><span>JavaFX</span><i>✦</i><span>Kotlin</span><i>✦</i><span>Jetpack Compose</span><i>✦</i><span>Python</span><i>✦</i><span>NumPy</span><i>✦</i><span>Pandas</span><i>✦</i><span>JavaScript</span><i>✦</i><span>FFT / STFT</span><i>✦</i><span>ONNX</span><i>✦</i><span>LaTeX</span><i>✦</i>
-        <span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Java</span><i>✦</i><span>JavaFX</span><i>✦</i><span>Kotlin</span><i>✦</i><span>Jetpack Compose</span><i>✦</i><span>Python</span><i>✦</i><span>NumPy</span><i>✦</i><span>Pandas</span><i>✦</i><span>JavaScript</span><i>✦</i><span>FFT / STFT</span><i>✦</i><span>ONNX</span><i>✦</i><span>LaTeX</span><i>✦</i>
+        <div class="track-half"><span>TypeScript</span><i>✦</i><span>Next.js</span><i>✦</i><span>React</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Supabase</span><i>✦</i><span>Kotlin</span><i>✦</i><span>Jetpack Compose</span><i>✦</i><span>Java</span><i>✦</i><span>JavaFX</span><i>✦</i><span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Python</span><i>✦</i><span>SQL</span><i>✦</i><span>MIPS</span><i>✦</i><span>JMeter</span><i>✦</i><span>DaVinci Resolve</span><i>✦</i></div>
+        <div class="track-half"><span>TypeScript</span><i>✦</i><span>Next.js</span><i>✦</i><span>React</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Supabase</span><i>✦</i><span>Kotlin</span><i>✦</i><span>Jetpack Compose</span><i>✦</i><span>Java</span><i>✦</i><span>JavaFX</span><i>✦</i><span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Python</span><i>✦</i><span>SQL</span><i>✦</i><span>MIPS</span><i>✦</i><span>JMeter</span><i>✦</i><span>DaVinci Resolve</span><i>✦</i></div>
       </div>
     </div>
 
@@ -79,150 +98,306 @@
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p class="lead">Hi, I'm <strong>Turjjo</strong> (friends call me <strong>TJ</strong>), a Computer Science &amp; Engineering student at <strong>Bangladesh University of Engineering and Technology</strong>.</p>
-          <p>My first real project was a recreation of the Nokia snake game I grew up with, written in C++ with iGraphics. Since then I've built a JavaFX productivity suite, a dot-connect game from my school days, a Möbius transformation visualizer, and <em>Signal Lab</em>, a full audio signal processing toolkit that runs Demucs and Whisper on an Android phone, offline.</p>
-          <p>Right now I'm going deeper into <strong>Python, NumPy and Pandas</strong> for <strong>data science</strong>, and I'd love to collaborate with people who are into it too.</p>
+          <p class="lead">Hi, I'm <strong>Turjjo</strong> (friends call me <strong>TJ</strong>), a Computer Science &amp; Engineering undergrad at <strong>Bangladesh University of Engineering and Technology</strong>.</p>
+          <p>I like software that holds up in real use. My largest project, <em>Aula Dining</em>, handles daily meals and feasts for Ahsanullah Hall North. Its rules live in Postgres, so a double tap or a flaky network can't oversell a seat. Before that came a Snake game in C, a client-server task manager in JavaFX, and <em>Audio Craft</em>, a signal processing toolkit for CSE 220.</p>
+          <p>Away from the editor I shoot and edit for <strong>IEEE Computer Society BUET</strong>, solve CTFs with the <strong>BUET Cyber Security Club</strong>, and make Bangla science videos for HSC students on YouTube.</p>
         </div>
         <div class="about-card reveal">
           <pre class="code mono"><span class="k">class</span> <span class="c">TurjjoPaul</span>:
-    uni      = <span class="s">"BUET"</span>
-    dept     = <span class="s">"CSE"</span>
-    batch    = <span class="n">2023</span>
-    builds   = [<span class="s">"games"</span>, <span class="s">"apps"</span>,
-                <span class="s">"visualizers"</span>, <span class="s">"DSP"</span>]
-    learning = <span class="s">"data science"</span>
-    open_to  = <span class="s">"collaboration 🤝"</span></pre>
+    uni     = <span class="s">"BUET"</span>
+    dept    = <span class="s">"CSE"</span>
+    term    = <span class="s">"L2-T2"</span>
+    shipped = [<span class="s">"Aula Dining"</span>,
+               <span class="s">"Split the Bill"</span>]
+    users   = <span class="n">367</span>
+    also    = [<span class="s">"IEEE CS"</span>, <span class="s">"CTFs"</span>, <span class="s">"YouTube"</span>]</pre>
           <div class="stats" id="ghStats">
-            <div><b data-stat="repos">15+</b><span>public repos</span></div>
-            <div><b data-stat="stars">6+</b><span>stars earned</span></div>
-            <div><b data-stat="followers">7+</b><span>followers</span></div>
+            <div><b data-stat="repos" aria-hidden="true">15+</b><span class="sr-only" data-sr="repos">15+</span><span>public repos</span></div>
+            <div><b data-stat="stars" aria-hidden="true">6+</b><span class="sr-only" data-sr="stars">6+</span><span>stars earned</span></div>
+            <div><b data-stat="followers" aria-hidden="true">7+</b><span class="sr-only" data-sr="followers">7+</span><span>followers</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═════════ WORK ═════════ -->
-    <section class="section" id="work">
+    <!-- ═════════ PROJECTS ═════════ -->
+    <section class="section" id="projects">
       <div class="section-head reveal">
         <span class="sec-num mono">02</span>
-        <h2>Selected work</h2>
-        <p class="sec-sub">Things I've designed, built and shipped.</p>
+        <h2>Projects</h2>
+        <p class="sec-sub">Products with real users first, then coursework and engineering builds.</p>
       </div>
 
-      <div class="bento">
-        <!-- Signal Lab (flagship) -->
-        <article class="card card-xl reveal" data-tilt>
-          <div class="card-visual signal-visual">
-            <canvas class="mini-spectrum" aria-hidden="true"></canvas>
-            <span class="tag tag-hot mono">★ flagship</span>
+      <h3 class="group-label mono reveal">Featured · real-world</h3>
+      <div class="bento bento-2">
+        <!-- Aula Dining -->
+        <article class="card card-feature reveal" data-tilt id="aula">
+          <div class="card-visual aula-visual" aria-hidden="true">
+            <div class="mock mono">
+              <div class="mock-top"><b>Lunch · Batch 3</b><span class="state">● in service</span></div>
+              <div class="seats" id="seats"></div>
+              <div class="mock-row"><span>seats confirmed</span><span>42 / 50</span></div>
+              <div class="mock-row"><span>"Lucky?" queue</span><span>3 waiting</span></div>
+              <div class="mock-row"><span>gate</span><span>open</span></div>
+            </div>
+            <span class="tag mono">● live</span>
           </div>
           <div class="card-body">
-            <p class="kicker mono">CSE 220 · Web + Android</p>
-            <h3>Signal Lab</h3>
-            <p>A complete audio DSP toolkit: FFT spectrum, spectrograms, Butterworth filtering, noise reduction, karaoke vocal separation with <b>Demucs</b>, lyric transcription with <b>Whisper</b> in English, Hindi and Bangla, plus a vault that hides audio inside encrypted PNGs. The Android version is native Kotlin and Compose and runs every model on the phone, offline.</p>
-            <ul class="chips mono"><li>Kotlin</li><li>Jetpack Compose</li><li>Python</li><li>ONNX Runtime</li><li>DSP</li></ul>
+            <p class="kicker mono">Personal product · PWA · in production</p>
+            <h3>Aula Dining</h3>
+            <div class="live-row">
+              <span class="live-pill mono"><span class="dot"></span> 367 active users</span>
+              <a class="live-pill app mono" href="https://aula-dining.vercel.app" target="_blank" rel="noopener">Live app ↗</a>
+            </div>
+            <p>Digitises daily dining and feast management for the residents of <b>Ahsanullah Hall North, BUET</b>: meal scheduling, seat booking in batches, coupon-based attendance and a live workflow for mess staff.</p>
+            <ul class="points">
+              <li><b>Rules in the database.</b> Postgres constraints, triggers and SQL functions enforce every rule across 59 versioned migrations. Clients never write tables directly.</li>
+              <li><b>Safe under load.</b> Ordered row locks and idempotency keys mean booking never oversells, and retries or double taps are harmless.</li>
+              <li><b>Three roles.</b> Student, mess manager and super admin, with every function checking the caller's role.</li>
+              <li><b>Tested and load-tested.</b> 18 database integration test files run on real Postgres in WASM (PGlite). The live deployment passed a load test.</li>
+            </ul>
+            <ul class="chips mono"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>pg_cron</li><li>Web Push</li><li>Vitest</li></ul>
+            <div class="links"><span class="soon mono">repo coming soon</span></div>
+          </div>
+        </article>
+
+        <!-- Split the Bill -->
+        <article class="card reveal" data-tilt id="split">
+          <div class="card-visual bill-visual" aria-hidden="true">
+            <div class="receipt mono">
+              <p class="sec"><span>restaurant</span><span></span></p>
+              <p><span>Kacchi ×2 · A, B</span><span>640</span></p>
+              <p><span>Borhani · C</span><span>120</span></p>
+              <p class="vat"><span>VAT + service 15%</span><span>scaled ↻</span></p>
+              <p class="sec"><span>flat</span><span></span></p>
+              <p><span>Rickshaw · all</span><span>90</span></p>
+              <p><span>Tickets · A, C</span><span>200</span></p>
+              <hr />
+              <p class="tot"><span>A owes</span><span>536</span></p>
+            </div>
+            <span class="tag tag-violet mono">◆ personal product</span>
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">Personal product · Android</p>
+            <h3>Split the Bill</h3>
+            <p>Built for real group outings, where restaurant items carry a percentage VAT or service charge but rickshaws, bikes and tickets are flat costs.</p>
+            <ul class="points">
+              <li>Tracks each person's itemised orders.</li>
+              <li>Spreads VAT and service charge across food items in proportion, and keeps flat costs separate.</li>
+              <li>Handles outings with several stops.</li>
+            </ul>
+            <ul class="chips mono"><li>Kotlin</li><li>Jetpack Compose</li><li>Android</li></ul>
+            <div class="links"><span class="soon mono">repo coming soon</span></div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="group-label mono reveal">Academic &amp; engineering</h3>
+      <div class="bento">
+        <!-- Audio Craft -->
+        <article class="card card-xl reveal" data-tilt id="audio-craft">
+          <div class="card-visual signal-visual">
+            <canvas class="mini-spectrum" aria-hidden="true"></canvas>
+            <span class="tag tag-hot mono">★ CSE 220</span>
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">CSE 220 · Signals and Systems Sessional</p>
+            <h3>Audio Craft</h3>
+            <p>An interactive audio signal processing and visualisation toolkit with a clean dashboard: FFT spectrum, spectrograms, Butterworth filtering and noise reduction. It also does vocal separation with <b>Demucs</b> and lyric transcription with <b>Whisper</b>. The Android build (Signal Lab) is native Kotlin and Compose and runs the models on the phone, offline.</p>
+            <ul class="chips mono"><li>Python</li><li>Kotlin</li><li>Jetpack Compose</li><li>ONNX Runtime</li><li>DSP</li></ul>
             <div class="links">
-              <a href="https://github.com/TJ-Paul/Signal_Lab" target="_blank" rel="noopener">Android app ↗</a>
               <a href="https://github.com/TJ-Paul/CSE220-Signal-Project" target="_blank" rel="noopener">Web toolkit ↗</a>
+              <a href="https://github.com/TJ-Paul/Signal_Lab" target="_blank" rel="noopener">Android app ↗</a>
             </div>
           </div>
         </article>
 
-        <!-- Möbius -->
-        <article class="card card-tall reveal" data-tilt>
-          <div class="card-visual img">
-            <img src="https://raw.githubusercontent.com/TJ-Paul/Mobius-Transformation-visualization/HEAD/visuals.png" alt="Möbius transformation visualizer screenshot" loading="lazy" />
-            <span class="tag mono">● live</span>
+        <!-- IMDb Clone -->
+        <article class="card reveal" data-tilt id="imdb">
+          <div class="card-visual schema-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 170">
+              <rect x="8" y="20" width="84" height="74" rx="8"/><rect class="hd" x="8" y="20" width="84" height="22" rx="8"/>
+              <text class="t" x="18" y="35">movie</text><text x="18" y="58">id PK</text><text x="18" y="74">title</text><text x="18" y="88">year</text>
+              <rect x="108" y="60" width="84" height="74" rx="8"/><rect class="hd" x="108" y="60" width="84" height="22" rx="8"/>
+              <text class="t" x="118" y="75">cast</text><text x="118" y="98">movie FK</text><text x="118" y="114">person FK</text><text x="118" y="128">role</text>
+              <rect x="208" y="20" width="84" height="74" rx="8"/><rect class="hd" x="208" y="20" width="84" height="22" rx="8"/>
+              <text class="t" x="218" y="35">person</text><text x="218" y="58">id PK</text><text x="218" y="74">name</text><text x="218" y="88">born</text>
+              <path d="M92 60 C100 60 100 100 108 100"/><path d="M208 60 C200 60 200 114 192 114"/>
+            </svg>
           </div>
           <div class="card-body">
-            <p class="kicker mono">Math · Interactive</p>
-            <h3>Möbius Visualizer</h3>
-            <p>Drag points and watch <code>w = (az+b)/(cz+d)</code> map the z-plane onto the w-plane live.</p>
-            <ul class="chips mono"><li>JavaScript</li><li>Canvas</li><li>Complex analysis</li></ul>
-            <div class="links">
-              <a href="https://tj-paul.github.io/Mobius-Transformation-visualization/" target="_blank" rel="noopener">Live demo ↗</a>
-              <a href="https://github.com/TJ-Paul/Mobius-Transformation-visualization" target="_blank" rel="noopener">Code ↗</a>
-            </div>
+            <p class="kicker mono">CSE 216 · Database Sessional</p>
+            <h3>IMDb Clone</h3>
+            <p>A full-stack movie database on the PERN stack, built on a normalised relational schema with complex queries.</p>
+            <ul class="chips mono"><li>PostgreSQL</li><li>Express</li><li>React</li><li>Node.js</li></ul>
+            <div class="links"><span class="soon mono">repo coming soon</span></div>
+          </div>
+        </article>
+
+        <!-- LoadLab -->
+        <article class="card reveal" data-tilt id="loadlab">
+          <div class="card-visual load-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 170" preserveAspectRatio="none">
+              <path class="grid" d="M30 40H292M30 80H292M30 120H292"/>
+              <path class="ax" d="M30 10V150H292"/>
+              <path class="area" d="M30 150 L60 128 L95 104 L130 84 L165 70 L200 62 L235 58 L270 57 L292 57 V150Z"/>
+              <path class="thr" d="M30 150 L60 128 L95 104 L130 84 L165 70 L200 62 L235 58 L270 57 L292 57"/>
+              <path class="lat" d="M30 138 L60 136 L95 133 L130 130 L165 124 L200 110 L235 82 L270 44 L292 24"/>
+              <text x="36" y="22">latency ↑</text><text x="210" y="164">users →</text>
+            </svg>
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">CSE 214 · Software Engineering Sessional</p>
+            <h3>LoadLab</h3>
+            <p>A load-testing and performance benchmarking workflow, built and run with <b>Apache JMeter</b>.</p>
+            <ul class="chips mono"><li>Apache JMeter</li><li>Load testing</li></ul>
+            <div class="links"><span class="soon mono">repo coming soon</span></div>
           </div>
         </article>
 
         <!-- OrganizeMe -->
-        <article class="card reveal" data-tilt>
+        <article class="card reveal" data-tilt id="organizeme">
           <div class="card-visual img">
             <img src="https://raw.githubusercontent.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2/HEAD/menu_page.png" alt="OrganizeMe menu screenshot" loading="lazy" />
           </div>
           <div class="card-body">
-            <p class="kicker mono">L1T2 · Desktop</p>
+            <p class="kicker mono">CSE 108 · OOP Sessional</p>
             <h3>OrganizeMe</h3>
-            <p>A JavaFX productivity suite with prioritized tasks, a scheduler, a Pomodoro timer, team collaboration and multi-device sync.</p>
-            <ul class="chips mono"><li>Java</li><li>JavaFX</li><li>Pomodoro</li></ul>
+            <p>A multi-threaded client-server desktop app for tasks and team collaboration, with real-time messaging and a built-in Pomodoro timer.</p>
+            <ul class="chips mono"><li>Java</li><li>JavaFX</li><li>Sockets</li><li>Threads</li></ul>
             <div class="links"><a href="https://github.com/TJ-Paul/OrganizeMe-JavaFX-v2-L1T2" target="_blank" rel="noopener">Code ↗</a></div>
           </div>
         </article>
 
+        <!-- Snake -->
+        <article class="card reveal" data-tilt id="snake">
+          <div class="card-visual img">
+            <img src="https://raw.githubusercontent.com/TJ-Paul/SnakeGame-iGraphics-L1T1/HEAD/social%20media%20uploads/gameplay.png" alt="Snake game screenshot" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">CSE 102 · Structured Programming Sessional</p>
+            <h3>Snake Game</h3>
+            <p>The classic arcade game built from scratch in <b>C</b> with the iGraphics library, with a menu, settings and gameplay.</p>
+            <ul class="chips mono"><li>C</li><li>iGraphics</li><li>OpenGL</li></ul>
+            <div class="links"><a href="https://github.com/TJ-Paul/SnakeGame-iGraphics-L1T1" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
         <!-- Tessellate -->
-        <article class="card reveal" data-tilt>
+        <article class="card reveal" data-tilt id="tessellate">
           <div class="card-visual img">
             <img src="https://raw.githubusercontent.com/TJ-Paul/Tessellate-JavaFX/HEAD/code/src/Tesselate_gameplay.png" alt="Tessellate gameplay screenshot" loading="lazy" />
           </div>
           <div class="card-body">
-            <p class="kicker mono">Game · JavaFX</p>
+            <p class="kicker mono">Side project · built on CSE 108 skills</p>
             <h3>Tessellate</h3>
-            <p>The dot-connect game every 2000s kid played in school. Connect dots without crossing lines and claim triangles.</p>
+            <p>A digital version of the dot-and-triangle game from school notebooks. Connect dots without crossing lines and claim triangles.</p>
             <ul class="chips mono"><li>Java</li><li>JavaFX</li><li>Geometry</li></ul>
             <div class="links"><a href="https://github.com/TJ-Paul/Tessellate-JavaFX" target="_blank" rel="noopener">Code ↗</a></div>
           </div>
         </article>
 
-        <!-- Snake -->
-        <article class="card reveal" data-tilt>
-          <div class="card-visual img">
-            <img src="https://raw.githubusercontent.com/TJ-Paul/SnakeGame-iGraphics-L1T1/HEAD/social%20media%20uploads/gameplay.png" alt="Snake game screenshot" loading="lazy" />
-          </div>
-          <div class="card-body">
-            <p class="kicker mono">CSE 102 · My first game</p>
-            <h3>Snake: iGraphics</h3>
-            <p>A tribute to the Nokia classic, with a menu, settings and gameplay, all written in C++ with the iGraphics library.</p>
-            <ul class="chips mono"><li>C++</li><li>iGraphics</li><li>OpenGL</li></ul>
-            <div class="links"><a href="https://github.com/TJ-Paul/SnakeGame-iGraphics-L1T1" target="_blank" rel="noopener">Code ↗</a></div>
-          </div>
-        </article>
-
-        <!-- Wedding -->
-        <article class="card card-wide reveal" data-tilt>
-          <div class="card-visual wedding-visual" aria-hidden="true">
-            <span class="w-layer l1"></span><span class="w-layer l2"></span><span class="w-layer l3"></span>
-            <span class="w-text">Join us</span>
-            <span class="tag mono">● live</span>
-          </div>
-          <div class="card-body">
-            <p class="kicker mono">Web · Animation</p>
-            <h3>Wedding Invitation</h3>
-            <p>A cinematic invitation that tells its story as you scroll. Hands move together, details fade in, and the date appears. Built with no animation libraries.</p>
-            <ul class="chips mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-            <div class="links">
-              <a href="https://tj-paul.github.io/wedding-invitation-parallax/" target="_blank" rel="noopener">Live demo ↗</a>
-              <a href="https://github.com/TJ-Paul/wedding-invitation-parallax" target="_blank" rel="noopener">Code ↗</a>
+        <!-- SpaceManager -->
+        <article class="card card-wide reveal" data-tilt id="spacemanager">
+          <div class="card-visual pack-visual" aria-hidden="true">
+            <div class="pack">
+              <i style="grid-column:span 3;grid-row:span 2"></i><i style="grid-column:span 2"></i><i style="grid-column:span 3;grid-row:span 3"></i>
+              <i style="grid-column:span 2;grid-row:span 2"></i><i style="grid-column:span 2"></i><i style="grid-column:span 1;grid-row:span 2"></i>
+              <i style="grid-column:span 4"></i><i style="grid-column:span 3"></i><i style="grid-column:span 2;grid-row:span 2"></i>
+              <i style="grid-column:span 3"></i><i style="grid-column:span 3"></i><i style="grid-column:span 4"></i><i style="grid-column:span 1"></i>
             </div>
+          </div>
+          <div class="card-body">
+            <p class="kicker mono">Desktop app · JavaFX</p>
+            <h3>SpaceManager</h3>
+            <p>A JavaFX utility that packs 2D shapes into a given space, shipped as an executable JAR.</p>
+            <ul class="chips mono"><li>Java</li><li>JavaFX</li><li>2D packing</li><li>Executable JAR</li></ul>
+            <div class="links"><span class="soon mono">repo coming soon</span></div>
           </div>
         </article>
       </div>
 
-      <!-- Small projects -->
+      <!-- Side experiments -->
+      <h3 class="group-label mono reveal" style="margin-top:64px">Side experiments · made for fun</h3>
       <div class="mini-list reveal">
-        <h3 class="mini-title mono">// more experiments</h3>
-        <a class="mini" href="https://tj-paul.github.io/CSE213-SWE-TF/" target="_blank" rel="noopener"><span>📘</span><b>CSE 213 Notes</b><em>Software engineering study notes site</em><i>↗</i></a>
-        <a class="mini" href="https://tj-paul.github.io/flip-clock/" target="_blank" rel="noopener"><span>⏰</span><b>Flip Clock</b><em>My first GitHub Pages site</em><i>↗</i></a>
-        <a class="mini" href="https://github.com/TJ-Paul/calculator-notion-widget" target="_blank" rel="noopener"><span>🧮</span><b>Calculator</b><em>Embeddable calculator widget</em><i>↗</i></a>
-        <a class="mini" href="https://github.com/TJ-Paul/python-notes" target="_blank" rel="noopener"><span>🐍</span><b>Python Notes</b><em>Data science learning notebooks</em><i>↗</i></a>
+        <a class="mini" href="https://tj-paul.github.io/Mobius-Transformation-visualization/" target="_blank" rel="noopener"><span>🌀</span><b>Möbius Visualizer</b><em>Drag points, watch w = (az+b)/(cz+d)</em><i>↗</i></a>
+        <a class="mini" href="https://tj-paul.github.io/wedding-invitation-parallax/" target="_blank" rel="noopener"><span>💌</span><b>Wedding Invitation</b><em>Scroll-driven animated invite</em><i>↗</i></a>
         <a class="mini" href="https://github.com/TJ-Paul/Parallax-Effect" target="_blank" rel="noopener"><span>🌄</span><b>Parallax Effect</b><em>Scroll-depth experiments</em><i>↗</i></a>
+        <a class="mini" href="https://github.com/TJ-Paul/flip-clock" target="_blank" rel="noopener"><span>⏰</span><b>Flip Clock</b><em>My first GitHub Pages site</em><i>↗</i></a>
+        <a class="mini" href="https://tj-paul.github.io/calculator/" target="_blank" rel="noopener"><span>🧮</span><b>Calculator</b><em>Embeddable calculator widget</em><i>↗</i></a>
+        <a class="mini" href="https://github.com/TJ-Paul/python-notes" target="_blank" rel="noopener"><span>📓</span><b>Python Notes</b><em>Learning notebooks</em><i>↗</i></a>
+      </div>
+    </section>
+
+    <!-- ═════════ COURSEWORK ═════════ -->
+    <section class="section" id="coursework">
+      <div class="section-head reveal">
+        <span class="sec-num mono">03</span>
+        <h2>Coursework</h2>
+        <p class="sec-sub">B.Sc. in CSE at BUET, term by term.</p>
+      </div>
+      <div class="reveal">
+        <div class="tabs" role="tablist" aria-label="Terms">
+          <button class="tab" role="tab" id="tab-l2t2" aria-controls="term-l2t2" aria-selected="true"><span class="dot"></span>L2 · T2</button>
+          <button class="tab" role="tab" id="tab-l2t1" aria-controls="term-l2t1" aria-selected="false" tabindex="-1">L2 · T1</button>
+          <button class="tab" role="tab" id="tab-l1t2" aria-controls="term-l1t2" aria-selected="false" tabindex="-1">L1 · T2</button>
+          <button class="tab" role="tab" id="tab-l1t1" aria-controls="term-l1t1" aria-selected="false" tabindex="-1">L1 · T1</button>
+        </div>
+
+        <div class="term" role="tabpanel" id="term-l2t2" aria-labelledby="tab-l2t2">
+          <div class="term-head"><h3>Level 2, Term 2</h3><span class="mono">current · term final</span></div>
+          <ul class="courses">
+            <li><span class="cc">CSE 209</span><span>Computer Architecture</span></li>
+            <li><span class="cc">CSE 210</span><span>Computer Architecture <span class="lab">sessional</span></span></li>
+            <li><span class="cc">CSE 211</span><span>Theory of Computation</span></li>
+            <li><span class="cc">CSE 213</span><span>Software Engineering</span></li>
+            <li><span class="cc">CSE 214</span><span>Software Engineering <span class="lab">sessional</span><br/><a class="proj" href="#loadlab">→ LoadLab (JMeter)</a></span></li>
+            <li><span class="cc">CSE 219</span><span>Signals and Systems</span></li>
+            <li><span class="cc">CSE 220</span><span>Signals and Systems <span class="lab">sessional</span><br/><a class="proj" href="#audio-craft">→ Audio Craft</a></span></li>
+          </ul>
+        </div>
+
+        <div class="term" role="tabpanel" id="term-l2t1" aria-labelledby="tab-l2t1">
+          <div class="term-head"><h3>Level 2, Term 1</h3><span class="mono">completed</span></div>
+          <ul class="courses">
+            <li><span class="cc">CSE 205</span><span>Digital Logic Design</span></li>
+            <li><span class="cc">CSE 206</span><span>Digital Logic Design <span class="lab">sessional</span></span></li>
+            <li><span class="cc">CSE 207</span><span>Data Structures and Algorithms II</span></li>
+            <li><span class="cc">CSE 208</span><span>Data Structures and Algorithms II <span class="lab">sessional</span></span></li>
+            <li><span class="cc">CSE 215</span><span>Database</span></li>
+            <li><span class="cc">CSE 216</span><span>Database <span class="lab">sessional</span><br/><a class="proj" href="#imdb">→ IMDb Clone (PERN)</a></span></li>
+          </ul>
+        </div>
+
+        <div class="term" role="tabpanel" id="term-l1t2" aria-labelledby="tab-l1t2">
+          <div class="term-head"><h3>Level 1, Term 2</h3><span class="mono">completed</span></div>
+          <ul class="courses">
+            <li><span class="cc">CSE 105</span><span>Data Structures and Algorithms I</span></li>
+            <li><span class="cc">CSE 106</span><span>Data Structures and Algorithms I <span class="lab">sessional</span></span></li>
+            <li><span class="cc">CSE 107</span><span>Object Oriented Programming Language</span></li>
+            <li><span class="cc">CSE 108</span><span>Object Oriented Programming Language <span class="lab">sessional</span><br/><a class="proj" href="#organizeme">→ OrganizeMe (JavaFX)</a></span></li>
+            <li><span class="cc">MATH 143</span><span>Linear Algebra</span></li>
+          </ul>
+        </div>
+
+        <div class="term" role="tabpanel" id="term-l1t1" aria-labelledby="tab-l1t1">
+          <div class="term-head"><h3>Level 1, Term 1</h3><span class="mono">completed</span></div>
+          <ul class="courses">
+            <li><span class="cc">CSE 101</span><span>Structured Programming Language (C)</span></li>
+            <li><span class="cc">CSE 102</span><span>Structured Programming Language <span class="lab">sessional</span><br/><a class="proj" href="#snake">→ Snake Game (C / iGraphics)</a></span></li>
+            <li><span class="cc">CSE 103</span><span>Discrete Mathematics</span></li>
+            <li><span class="cc">MATH 141</span><span>Calculus I (differential, integral &amp; ODEs)</span></li>
+          </ul>
+        </div>
+
+        <p class="notes-line mono">// notes I published: <a href="https://tj-paul.github.io/CSE213-SWE-TF/" target="_blank" rel="noopener">CSE 213 Software Engineering ↗</a> · <a href="https://tj-paul.github.io/MATH243-TF/" target="_blank" rel="noopener">MATH 243 Probability &amp; Statistics ↗</a></p>
       </div>
     </section>
 
     <!-- ═════════ SKILLS ═════════ -->
     <section class="section" id="skills">
       <div class="section-head reveal">
-        <span class="sec-num mono">03</span>
+        <span class="sec-num mono">04</span>
         <h2>Toolbox</h2>
         <p class="sec-sub">What I reach for when I build.</p>
       </div>
@@ -230,89 +405,118 @@
         <div class="skill-group reveal">
           <h3 class="mono">Languages</h3>
           <div class="skill-icons">
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" /><figcaption>C</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" /><figcaption>C++</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" /><figcaption>Java</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" /><figcaption>Kotlin</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" /><figcaption>Python</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" /><figcaption>JavaScript</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" loading="lazy" /><figcaption>C</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy" /><figcaption>C++</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy" /><figcaption>Java</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" loading="lazy" /><figcaption>Kotlin</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy" /><figcaption>Python</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" /><figcaption>JavaScript</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" loading="lazy" /><figcaption>TypeScript</figcaption></figure>
+            <figure><span class="ico glyph" aria-hidden="true">SQL</span><figcaption>SQL</figcaption></figure>
+            <figure><span class="ico glyph" aria-hidden="true">MIPS</span><figcaption>MIPS Assembly</figcaption></figure>
           </div>
         </div>
         <div class="skill-group reveal">
-          <h3 class="mono">Frameworks &amp; Data</h3>
+          <h3 class="mono">Frontend &amp; Mobile</h3>
           <div class="skill-icons">
-            <figure><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="" /><figcaption>JavaFX</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" alt="" /><figcaption>Compose</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="" /><figcaption>NumPy</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="" /><figcaption>Pandas</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="" /><figcaption>Matplotlib</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="" /><figcaption>Jupyter</figcaption></figure>
+            <figure><img class="ico invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" loading="lazy" /><figcaption>Next.js</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy" /><figcaption>React</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" /><figcaption>HTML</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy" /><figcaption>CSS</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" alt="" loading="lazy" /><figcaption>Compose</figcaption></figure>
+            <figure><img class="ico" src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="" loading="lazy" /><figcaption>JavaFX</figcaption></figure>
           </div>
         </div>
         <div class="skill-group reveal">
-          <h3 class="mono">Tools</h3>
+          <h3 class="mono">Backend &amp; Databases</h3>
           <div class="skill-icons">
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" /><figcaption>Git</figcaption></figure>
-            <figure><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" /><figcaption>GitHub</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="" /><figcaption>Android Studio</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="" /><figcaption>IntelliJ</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" /><figcaption>VS Code</figcaption></figure>
-            <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="" class="invert" /><figcaption>LaTeX</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy" /><figcaption>Node.js</figcaption></figure>
+            <figure><img class="ico invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy" /><figcaption>Express</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" /><figcaption>PostgreSQL</figcaption></figure>
+            <figure><span class="ico glyph" aria-hidden="true">Neon</span><figcaption>Neon DB</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy" /><figcaption>MySQL</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="" loading="lazy" /><figcaption>Oracle SQL</figcaption></figure>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="mono">Data</h3>
+          <div class="skill-icons">
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="" loading="lazy" /><figcaption>NumPy</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="" loading="lazy" /><figcaption>Pandas</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="" loading="lazy" /><figcaption>Matplotlib</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="" loading="lazy" /><figcaption>Jupyter</figcaption></figure>
+          </div>
+        </div>
+        <div class="skill-group wide reveal">
+          <h3 class="mono">Tools &amp; Design</h3>
+          <div class="skill-icons">
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy" /><figcaption>Git</figcaption></figure>
+            <figure><img class="ico invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" loading="lazy" /><figcaption>GitHub</figcaption></figure>
+            <figure><img class="ico invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="" loading="lazy" /><figcaption>Vercel</figcaption></figure>
+            <figure><span class="ico glyph" aria-hidden="true">JM</span><figcaption>JMeter</figcaption></figure>
+            <figure><span class="ico glyph" aria-hidden="true">&amp;▷</span><figcaption>Logisim Evolution</figcaption></figure>
+            <figure><img class="ico invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="" loading="lazy" /><figcaption>LaTeX / TikZ</figcaption></figure>
+            <figure><span class="ico glyph" aria-hidden="true">DR</span><figcaption>DaVinci Resolve</figcaption></figure>
+            <figure><span class="ico glyph" aria-hidden="true">Lr</span><figcaption>Lightroom</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="" loading="lazy" /><figcaption>Android Studio</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="" loading="lazy" /><figcaption>IntelliJ</figcaption></figure>
+            <figure><img class="ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" loading="lazy" /><figcaption>VS Code</figcaption></figure>
+            <figure><img class="ico invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="" loading="lazy" /><figcaption>Notion</figcaption></figure>
           </div>
         </div>
         <div class="skill-group concepts reveal">
           <h3 class="mono">Concepts I enjoy</h3>
           <ul class="chips mono big">
-            <li>OOP &amp; design patterns</li><li>Data structures</li><li>Signal processing</li><li>FFT / STFT</li><li>Complex analysis</li><li>On-device ML</li><li>Game loops</li><li>Scroll animation</li>
+            <li>Database-centric design</li><li>Concurrency control</li><li>Idempotency</li><li>State machines</li><li>Role-based access</li><li>Load testing</li><li>Signal processing</li><li>FFT / STFT</li><li>OOP &amp; design patterns</li><li>Socket programming</li><li>Data structures</li><li>Computer architecture</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ═════════ JOURNEY ═════════ -->
-    <section class="section" id="journey">
+    <!-- ═════════ BEYOND ═════════ -->
+    <section class="section" id="beyond">
       <div class="section-head reveal">
-        <span class="sec-num mono">04</span>
-        <h2>Journey</h2>
-        <p class="sec-sub">Level by level, term by term.</p>
+        <span class="sec-num mono">05</span>
+        <h2>Beyond code</h2>
+        <p class="sec-sub">Campus clubs and the camera.</p>
       </div>
-      <ol class="timeline">
-        <li class="reveal">
-          <span class="t-when mono">Level 1 · Term 1</span>
-          <h3>Hello, C &amp; C++ 🐍</h3>
-          <p>Learned to program in C and built my first game, Snake, with iGraphics for CSE 102.</p>
-        </li>
-        <li class="reveal">
-          <span class="t-when mono">Level 1 · Term 2</span>
-          <h3>Objects everywhere ☕</h3>
-          <p>Java and OOP. Shipped OrganizeMe (tasks, Pomodoro, team sync) and Tessellate, both in JavaFX.</p>
-        </li>
-        <li class="reveal">
-          <span class="t-when mono">Level 2</span>
-          <h3>Math meets code 📐</h3>
-          <p>Built an interactive Möbius transformation visualizer and published my software engineering notes as a website.</p>
-        </li>
-        <li class="reveal">
-          <span class="t-when mono">CSE 220</span>
-          <h3>Signals &amp; sound 🎧</h3>
-          <p>Signal Lab: a DSP pipeline from sampling to reconstruction, then ported to Android with Demucs and Whisper running on the phone.</p>
-        </li>
-        <li class="reveal now">
-          <span class="t-when mono">Now</span>
-          <h3>Into the data 📊</h3>
-          <p>Going deep on Python, NumPy and Pandas for data science. Always open to collaborating.</p>
-        </li>
-      </ol>
+      <div class="beyond">
+        <article class="card reveal">
+          <div class="card-body">
+            <div class="b-icon" aria-hidden="true">📸</div>
+            <p class="kicker mono">Media · design</p>
+            <h3>IEEE Computer Society BUET</h3>
+            <p>Active member of the student branch chapter. I work on photography, video editing and graphic design for its flagship events.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-body">
+            <div class="b-icon" aria-hidden="true">🛡️</div>
+            <p class="kicker mono">Security · CTF</p>
+            <h3>BUET Cyber Security Club</h3>
+            <p>Active member. I solve CTF problems and explore security with the club.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-body">
+            <div class="b-icon" aria-hidden="true">🎬</div>
+            <p class="kicker mono">YouTube · cinematography</p>
+            <h3>@turjjopaul1190</h3>
+            <p>Bangla science explainers for HSC students, plus videography I colour-grade in DaVinci Resolve.</p>
+            <div class="links"><a href="https://www.youtube.com/@turjjopaul1190" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- ═════════ ACTIVITY ═════════ -->
     <section class="section" id="activity">
       <div class="section-head reveal">
-        <span class="sec-num mono">05</span>
+        <span class="sec-num mono">06</span>
         <h2>On GitHub</h2>
       </div>
       <div class="activity reveal">
-        <img src="https://ghchart.rshah.org/22d3ee/TJ-Paul" alt="TJ-Paul's GitHub contribution chart" />
+        <img src="https://ghchart.rshah.org/22d3ee/TJ-Paul" alt="TJ-Paul's GitHub contribution chart" loading="lazy" onerror="this.remove()" />
         <a href="https://github.com/TJ-Paul" target="_blank" rel="noopener" class="btn btn-ghost">Follow @TJ-Paul</a>
       </div>
     </section>
@@ -321,11 +525,12 @@
     <section class="section contact" id="contact">
       <div class="reveal">
         <p class="eyebrow mono"><span class="dot"></span> open to collaborate</p>
-        <h2 class="contact-title">Let's build<br/>something <span class="grad">loud</span>.</h2>
-        <p class="sec-sub">Working on a data science idea, a game, or something weird and interesting? My inbox is open.</p>
-        <a class="mail mono" href="mailto:tjpaul770@gmail.com">tjpaul770@gmail.com <span aria-hidden="true">↗</span></a>
+        <h2 class="contact-title">Let's build<br/>something <span class="grad">real</span>.</h2>
+        <p class="sec-sub">Have a product idea, a system that needs to hold up under load, or a video project? My inbox is open.</p>
+        <a class="mail mono" id="mail" href="#contact" data-u="tjpaul770" data-d="gmail.com"><span id="mailText">tjpaul770 [at] gmail [dot] com</span> <span aria-hidden="true">↗</span></a>
         <div class="socials">
           <a href="https://github.com/TJ-Paul" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+          <a href="https://www.youtube.com/@turjjopaul1190" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></a>
           <a href="https://linkedin.com/in/turjjo-paul" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm1.8 13.1H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg></a>
           <a href="https://fb.com/turjjo.paul" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12Z"/></svg></a>
           <a href="https://instagram.com/turjjo_paul" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2ZM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9Z"/></svg></a>
@@ -335,7 +540,7 @@
   </main>
 
   <footer class="footer mono">
-    <span>© <span id="year"></span> Turjjo Paul</span>
+    <span>© <span id="year">2026</span> Turjjo Paul</span>
     <span>built from scratch · hosted on GitHub Pages</span>
     <a href="#top">back to top ↑</a>
   </footer>
