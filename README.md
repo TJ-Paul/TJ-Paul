@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&multiline=false&width=680&height=50&lines=Hi+there+%F0%9F%91%8B+I'm+Turjjo+Paul;CSE+%40+BUET+%C2%B7+Level+2%2C+Term+2;Running+a+live+app+for+367+hall+residents;Kotlin+%E2%80%A2+TypeScript+%E2%80%A2+PostgreSQL+%E2%80%A2+Java+%E2%80%A2+C" alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&multiline=false&width=680&height=50&lines=Hi+there+%F0%9F%91%8B+I'm+Turjjo+Paul;CSE+%40+BUET+%C2%B7+Level+2%2C+Term+2;Building+real-world+web+%26+Android+apps;Kotlin+%E2%80%A2+TypeScript+%E2%80%A2+PostgreSQL+%E2%80%A2+Java+%E2%80%A2+C" alt="Typing SVG"/>
   </a>
 </p>
 
@@ -36,9 +36,9 @@ class TurjjoPaul:
         self.term       = "Level 2, Term 2"
         self.pronouns   = "he/him"
 
-        self.shipped    = {"Aula Dining": "367 active users", "Split the Bill": "Android"}
+        self.shipped    = ["Aula Dining", "Split the Bill"]
         self.languages  = ["C", "C++", "Java", "Kotlin", "Python", "TypeScript", "SQL", "MIPS"]
-        self.clubs      = ["IEEE Computer Society BUET", "BUET Cyber Security Club"]
+        self.clubs      = ["IEEE CS BUET SBC (executive member)", "BUET Cyber Security Club"]
 
     def motto(self):
         return "Build it so it holds up in real use."
@@ -147,7 +147,7 @@ CSE 101 Structured Programming Language (C) · CSE 102 SPL Sessional *(Snake Gam
 <!-- ═══════════════════════ BEYOND ═══════════════════════ -->
 <h2>🧩 Beyond Code</h2>
 
-- 📸 **IEEE Computer Society BUET Student Branch Chapter:** active member doing photography, video editing and graphic design for flagship events.
+- 📸 **IEEE CS BUET SBC** (IEEE Computer Society BUET Student Branch Chapter): executive member handling photography, video editing and graphic design for flagship events.
 - 🛡️ **BUET Cyber Security Club:** active member solving CTF problems and exploring security.
 
 <!-- ═══════════════════════ STATS ═══════════════════════ -->

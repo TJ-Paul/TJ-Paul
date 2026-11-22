@@ -117,7 +117,7 @@
 
   /* ───────── Typing effect ───────── */
   const roles = [
-    "running a live app for 367 hall residents",
+    "shipping a dining app for my hall",
     "splitting bills with Kotlin & Compose",
     "processing audio for CSE 220",
     "designing schemas in PostgreSQL",
