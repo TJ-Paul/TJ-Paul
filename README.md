@@ -121,7 +121,7 @@ An Android app for group outings, where restaurant items carry a percentage VAT 
 <details open>
 <summary><b>Level 2, Term 2</b> · current, term final</summary>
 
-CSE 209 Computer Architecture · CSE 210 Computer Architecture Sessional · CSE 211 Theory of Computation · CSE 213 Software Engineering · CSE 214 Software Engineering Sessional *(LoadLab)* · CSE 219 Signals and Systems · CSE 220 Signals and Systems Sessional *(Audio Craft)*
+CSE 209 Computer Architecture · CSE 210 Computer Architecture Sessional · CSE 211 Theory of Computation · CSE 213 Software Engineering *([notes](https://tj-paul.github.io/CSE213-SWE-TF/))* · CSE 214 Software Engineering Sessional *(LoadLab)* · CSE 219 Signals and Systems · CSE 220 Signals and Systems Sessional *(Audio Craft)* · MATH 243 Probability and Statistics *([notes](https://tj-paul.github.io/MATH243-TF/))*
 </details>
 
 <details>
@@ -142,12 +142,17 @@ CSE 105 Data Structures and Algorithms I · CSE 106 DSA I Sessional · CSE 107 O
 CSE 101 Structured Programming Language (C) · CSE 102 SPL Sessional *(Snake Game)* · CSE 103 Discrete Mathematics · MATH 141 Calculus I
 </details>
 
-<sub>Notes I published: [CSE 213 Software Engineering](https://tj-paul.github.io/CSE213-SWE-TF/) · [MATH 243 Probability & Statistics](https://tj-paul.github.io/MATH243-TF/)</sub>
+**📒 Course notes & materials I publish**
+
+| Course | Website | Repo |
+|:--|:--|:--|
+| CSE 213 · Software Engineering | [tj-paul.github.io/CSE213-SWE-TF](https://tj-paul.github.io/CSE213-SWE-TF/) | [TJ-Paul/CSE213-SWE-TF](https://github.com/TJ-Paul/CSE213-SWE-TF) |
+| MATH 243 · Probability & Statistics | [tj-paul.github.io/MATH243-TF](https://tj-paul.github.io/MATH243-TF/) | [TJ-Paul/MATH243-TF](https://github.com/TJ-Paul/MATH243-TF) |
 
 <!-- ═══════════════════════ BEYOND ═══════════════════════ -->
 <h2>🧩 Beyond Code</h2>
 
-- 📸 **IEEE CS BUET SBC** (IEEE Computer Society BUET Student Branch Chapter): executive member handling photography, video editing and graphic design for flagship events.
+- 💠 **IEEE CS BUET SBC** (IEEE Computer Society BUET Student Branch Chapter): executive member.
 - 🛡️ **BUET Cyber Security Club:** active member solving CTF problems and exploring security.
 
 <!-- ═══════════════════════ STATS ═══════════════════════ -->

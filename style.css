@@ -436,9 +436,17 @@ a { color: inherit; text-decoration: none; }
 .courses .lab { font-family: var(--mono); font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; margin-left: 6px; white-space: nowrap; }
 .courses a.proj { display: inline-block; margin-top: 2px; font-family: var(--mono); font-size: 12.5px; color: var(--violet); }
 .courses a.proj:hover { text-decoration: underline; }
-.notes-line { margin: 22px 0 0; font-size: 14.5px; color: var(--muted); }
-.notes-line a { color: var(--text); border-bottom: 1px solid var(--line-2); }
-.notes-line a:hover { color: var(--cyan); border-color: var(--cyan); }
+.notes { margin-top: 28px; }
+.notes h4 { margin: 0 0 14px; font-size: 13px; font-weight: 500; color: var(--muted); }
+.notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.note { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); transition: border-color .3s; }
+.note:hover { border-color: var(--line-2); }
+.note .cc { font-size: 13px; color: var(--cyan); }
+.note b { font-weight: 600; }
+.note-links { margin-left: auto; display: flex; gap: 14px; }
+.note-links a { font-weight: 600; font-size: 14px; border-bottom: 1px solid var(--line-2); padding-bottom: 1px; transition: color .2s, border-color .2s; }
+.note-links a:hover { color: var(--cyan); border-color: var(--cyan); }
+@media (max-width: 720px) { .notes-grid { grid-template-columns: 1fr; } .note-links { margin-left: 0; width: 100%; } }
 
 /* ═══════════ SKILLS ═══════════ */
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
