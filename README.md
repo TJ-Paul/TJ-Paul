@@ -47,7 +47,7 @@ class TurjjoPaul:
 <!-- ═══════════════════════ FEATURED ═══════════════════════ -->
 <h2>🚀 Featured · Real-World Projects</h2>
 
-### 🍽️ Aula Dining &nbsp; <a href="https://aula-dining.vercel.app"><img src="https://img.shields.io/badge/Live_App-aula--dining.vercel.app-10b981?style=flat-square&logo=vercel&logoColor=white" alt="Live app"/></a> <img src="https://img.shields.io/badge/active_users-367-22d3ee?style=flat-square" alt="367 active users"/>
+### 🍽️ Aula Dining &nbsp; <a href="https://aula-dining.vercel.app"><img src="https://img.shields.io/badge/Live_App-aula--dining.vercel.app-10b981?style=flat-square&logo=vercel&logoColor=white" alt="Live app"/></a> <a href="https://tj-paul.github.io/Aula-north-dining-management/login/"><img src="https://img.shields.io/badge/Live_Demo-try_it-a78bfa?style=flat-square&logo=githubpages&logoColor=white" alt="Live demo"/></a> <img src="https://img.shields.io/badge/active_users-367-22d3ee?style=flat-square" alt="367 active users"/>
 
 A dining management PWA for the residents of **Ahsanullah Hall North, BUET**. It runs meal scheduling, seat booking in batches, coupon-based attendance and a live workflow for mess staff.
 
